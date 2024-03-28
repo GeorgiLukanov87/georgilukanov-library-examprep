@@ -35,8 +35,8 @@ jobs:
         with:
           service-id: ${{ secrets.MY_RENDER_SERVICE_ID }}
           api-key: ${{ secrets.MY_RENDER_API_KEY }}
-      - name: Wait 240 seconds to complate deploy
-        run: sleep 240
+      - name: Wait 120 seconds to complate deploy
+        run: sleep 120
   
   run-ui-tests:
     runs-on: ubuntu-latest
